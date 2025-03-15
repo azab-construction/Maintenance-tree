@@ -35,3 +35,7 @@ jobs:
       run: |
         node -v
         npm ls
+
+    - name: Debug module loading issues
+      run: |
+        node -e "require('./src/index.js')"
